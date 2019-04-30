@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki Viwer</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">Wikipedia Viewer</h1>
+    <form class="search">
+      <div class="search--fields">
+        <div class="search--input">
+          <input type="text" placeholder="search..." class="js-search "/>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+          <i class="fa fa-random search-random" aria-hidden="true"></i>
+        </a>
+      </div>
+      <ul class="js-result search--result">
+      </ul>
+      <div class="search--button">
+        <button class="js-prev">Previous</button>
+        <button class="js-next">Next</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

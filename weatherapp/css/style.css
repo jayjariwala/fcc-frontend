@@ -1,0 +1,38 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding:20px;
+}
+
+.container {
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-display {
+  box-sizing: border-box;
+}
+
+.temprature-display, .weather-display {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+}
+
+.temprature-display__temp {
+    font-size: 100px;
+    position: relative;
+}
+
+.temprature-display__degree {
+    position: absolute;
+}
+
+.temprature-display__location-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

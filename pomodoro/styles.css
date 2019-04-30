@@ -1,0 +1,270 @@
+:root
+{
+	--red:#FA3F3F ;
+	--black:#2d2d2d;
+	--green:#21E521;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	font-family: 'Nunito', sans-serif;
+	background:  #CECECE;
+}
+
+.container
+{
+	max-width: 550px;
+	margin: 0 auto;
+	margin-top:100px;
+	background-color:white;
+	border-radius: 8px;
+	box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.3);
+	background: var(--red);
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.timerFace
+{
+	position: relative;
+	font-family: 'Source Code Pro', monospace;
+	letter-spacing: 5px;
+	height: 240px;
+	box-sizing: border-box;
+	text-shadow: 0px 0px 1px rgba(255,255,255,1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timerFace h1
+{
+	font-size: 72px;
+	position: absolute;
+	margin-top: -10px;
+	
+}
+
+.timerFace p
+{
+	margin:0;
+	padding: 0;
+	position: absolute;
+	font-size: 18px;
+	margin-top: -10px;
+	max-width: 220px;
+
+}
+
+.timerDisplay
+{
+	text-align: center;
+	background-color: var(--black);
+	color: white;
+	font-size: 45px;
+	margin:0 auto;
+	display: inline-block;
+	min-width: 420px;
+	border-radius: 6px;
+	position: relative;
+
+}
+
+.toggleLight
+{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	bottom: 10px;
+	display: flex;
+	
+}
+
+.focusStatus, .BreakStatus
+{
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+    color:rgba(128,128,128,0.7);
+}
+
+.arrows
+{
+	font-size: 20px;
+	color:rgba(128,128,128,0.7);
+}
+
+.active-green
+{
+	color:var(--green);
+}
+
+.blinking-green
+{
+	color:var(--green);
+	animation: blinkit 1s infinite;
+}
+
+@keyframes blinkit
+{
+	from {
+		color:rgba(128,128,128,0.7);
+	}
+	50% {
+		color:var(--green);
+	}
+	to {
+		color:rgba(128,128,128,0.7);	
+	}
+}
+
+.fa-volume-up
+{
+	color:white;
+
+}
+
+.deactive-green
+{
+	color:rgba(128,128,128,0.7);
+}
+
+.BreakStatus
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.controllers
+{
+	margin-top:20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.btn-play, .btn-reset, .btn-break-up, .btn-break-down, .btn-focus-up, .btn-focus-down
+{
+	background:var(--red);
+	color: white;
+	cursor: pointer;
+}
+
+.btn-play, .btn-break-up , .btn-break-down , .btn-focus-up, .btn-focus-down , .btn-reset 
+{
+	
+	background: var(--red);
+	background: --webkit-radial-gradient(hsl(12, 87%, 50%), hsl(12, 87%, 40%));
+	background: --moz-radial-gradient(hsl(12, 87%, 50%), hsl(12, 87%, 40%));
+	background: --o-radial-gradient(hsl(12, 87%, 50%),hsl(12, 87%, 40%));
+	background: radial-gradient(hsl(12, 87%, 50%), hsl(12, 87%, 40%));
+	border: none;
+	outline: none;
+}
+
+
+.btn-play
+{
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	box-shadow: inset 0px 1px 0 hsl(12, 87%, 50%),
+				0px 2px 0 hsl(12, 87%, 40%),
+				0px 3px 0 hsl(12, 87%, 35%),
+				0px 4px 0 hsl(12, 87%, 32%),
+				0px 5px 0 hsl(12, 87%, 30%),
+				0px 6px 0 hsl(12, 87%, 29%),
+				0px 7px 0 hsl(12, 87%, 25%),
+				0px 8px 0 hsl(12, 87%, 20%);
+}
+
+.btn-reset
+{
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	position: relative;
+	box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.5);
+}
+
+.btn-break-up , .btn-break-down , .btn-focus-up , .btn-focus-down
+{
+	position: relative;
+	box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.5);
+	border-radius: 5px;
+} 
+
+
+.btn-break-up:active , .btn-break-down:active , .btn-focus-up:active , .btn-focus-down:active , .btn-reset:active
+{
+	top: 3px;
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.5);
+}
+
+
+.btn-play:hover , .btn-break-up:hover , .btn-break-down:hover , .btn-focus-up:hover , .btn-focus-down:hover , .btn-reset:hover
+{
+		position: relative;
+		background: var(--red);
+		background: --webkit-radial-gradient(hsl(12, 87%, 45%), hsl(12, 87%, 35%));
+		background: --moz-radial-gradient(hsl(12, 87%, 45%), hsl(12, 87%, 35%));
+		background: --o-radial-gradient(hsl(12, 87%, 45%),hsl(12, 87%, 35%));
+		background: radial-gradient(hsl(12, 87%, 45%), hsl(12, 87%, 35%));
+}
+
+.btn-play:active
+{
+	top: 2px;
+	background: --webkit-radial-gradient(hsl(12, 87%, 43%), hsl(12, 87%, 32%));
+	background: --moz-radial-gradient(hsl(12, 87%, 43%), hsl(12, 87%, 32%));
+	background: --o-radial-gradient(hsl(12, 87%, 43%),hsl(12, 87%, 32%));
+	background: radial-gradient(hsl(12, 87%, 43%), hsl(12, 87%, 32%));
+	box-shadow: inset 0px 1px 0 hsl(12, 87%, 50%),
+				0px 2px 0 hsl(12, 87%, 40%),
+				0px 3px 0 hsl(12, 87%, 35%),
+				0px 4px 0 hsl(12, 87%, 32%),
+				0px 5px 0 hsl(12, 87%, 30%),
+				0px 6px 0 hsl(12, 87%, 29%)
+}
+
+.focusMins , .breakMins
+{
+	background: var(--black);
+	height: 50px;
+	width:30px;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 3px;
+	color:white;
+	text-shadow: 0px 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.label
+{
+	margin: 10px;
+	font-style: italic;
+	font-size: 18px;
+	color: var(--black);
+	text-transform: capitalize;
+	text-shadow: 1px 1px rgba(255,255,255,0.1);
+	font-family: 'Dancing Script', cursive;
+}
+
+.clockHeading
+{
+	color: var(--black);
+	text-transform: capitalize;
+	text-shadow: 1px 1px rgba(255,255,255,0.1);
+	font-family: 'Dancing Script', cursive;
+	margin: 10px;
+	margin-top: 5px;
+}

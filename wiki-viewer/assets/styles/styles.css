@@ -1,0 +1,148 @@
+@font-face {
+  font-family: abril;
+  src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+body
+{
+  margin:0;
+  padding: 0;
+}
+
+.container
+{
+  padding: 0 20px;
+}
+.logo
+{
+  display: block;
+  font-family: 'abril';
+  letter-spacing: 0.2rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.search--fields
+{
+  text-align: center;
+  margin: 30px;
+}
+
+.search-random
+{
+  margin: 30px;
+}
+
+
+
+.search--input
+{
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+.search--input input
+{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.search--input input:focus , .search--input input:hover 
+{
+  border-color: black;
+}
+
+.search-random
+{
+  font-size: 34px;
+  color: grey;
+}
+
+.search-random:hover
+{
+  color: black;
+}
+
+.search--result
+{
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+ul
+{
+  padding: 0 !important;
+}
+
+.search--result li 
+{
+  position: relative;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 9px 25px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: -1px 9px 25px -4px rgba(0,0,0,0.2);
+  box-shadow: -1px 9px 25px -4px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  transition: all .5s ease-in;
+  cursor: pointer;
+}
+
+.search--result li:hover
+{
+  top: -3px;
+  -webkit-box-shadow: -3px 17px 22px -7px rgba(138,138,138,0.4);
+-moz-box-shadow: -3px 17px 22px -7px rgba(138,138,138,0.4);
+box-shadow: -3px 17px 22px -7px rgba(138,138,138,0.4);
+}
+
+.search--button
+{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+button
+{
+  padding:10px 5px;
+  background:white;
+  font-size: 18px;
+  border:2px solid;
+  border-radius: 2px;
+}
+
+a  
+{
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchmatch
+{
+  background-color: greenyellow;
+}
+
+.title
+{
+  font-family: 'abril';
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo
+  {
+    font-size: 34px;
+  }
+}

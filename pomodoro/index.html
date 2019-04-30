@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Timer</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+	<div class="container">
+		<div class="text-wrapper">
+			<h2 class="clockHeading">Pomodoro Timer</h2>
+		</div>
+		<div class="timerDisplay">
+			<div class="toggleLight">
+				<span class="focusStatus">Focus</span>
+				<div class="arrows">
+					<i class="fa fa-long-arrow-left fa-lg" aria-hidden="true"></i> <i class="fa fa-volume-up fa-xs " aria-hidden="true"></i>
+					<audio id="notification">
+					<source src="sound/light.mp3" type="audio/mp3" >
+					</audio>
+					 <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i> 
+				</div>
+				<span class="BreakStatus">Break</span>
+			</div>
+			<!--  -->
+			<div class="timerFace">
+				<h1 class="time">25:00</h1>
+				<!-- <p class="welcome">Hi There! 😍  Please setup the timer ⏳</p> -->
+			</div>
+		</div>
+		<div class="controllers">
+			<div class="FocusControllers">
+				<button class="btn-focus-up">
+					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+				</button>
+				<p class="focusMins">10</p>
+				<button class="btn-focus-down">
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</button>
+				<p class="label">Session</p>
+			</div>
+			<div class="mainControllers">
+				<div class="playControllers">
+					<button class="btn-play">
+						<i class="fa fa-play fa-lg" aria-hidden="true"></i>
+					</button>
+					<p class="label">Start / Pause</p>
+				</div>
+				<div class="resetControllers">
+					<button class="btn-reset">
+						<i class="fa fa-repeat" aria-hidden="true"></i>
+					</button>
+					<p class="label">reset</p>
+				</div>
+			</div>
+			<div class="breakControllers">
+				<button class="btn-break-up">
+					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+				</button>
+					<p class="breakMins">5</p>
+				<button class="btn-break-down">
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				</button>
+				<p class="label">Break </p>
+			</div>
+		</div>
+	</div>
+	<script src="pomodoro.js"></script>
+</body>
+</html>
