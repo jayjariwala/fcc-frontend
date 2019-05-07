@@ -17,3 +17,29 @@ button {
   color:white !important;
   border: none !important;
 }
+
+.message-banner {
+  margin-top: 100px;
+}
+
+.text-primary {
+  color: lightcoral !important;
+}
+
+.fa-spinner {
+  font-size:52px;
+  color:lightcoral;
+}
+
+#loading {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
